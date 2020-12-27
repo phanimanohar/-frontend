@@ -73,7 +73,7 @@ class AddPropertyPage extends Component {
   //     loading: true,
   //   });
 
-  //   axios.get('//getrightproperty.com/api/property/getImages').then(({ data }) => {
+  //   axios.get('//getrightproperty.com:3001/api/property/getImages').then(({ data }) => {
   //     this.setState({
   //       images: [...data, ...this.state.images],
   //       loading: false,
@@ -136,7 +136,7 @@ class AddPropertyPage extends Component {
     formData.append("image", this.state.selectedFile, this.state.Imagename);
 
     axios
-      .post("//getrightproperty.com/api/property/upload", formData)
+      .post("//getrightproperty.com:3001/api/property/upload", formData)
       .then(({ data }) => {
         console.log("data", data);
         this.setState({
@@ -623,7 +623,7 @@ class AddPropertyPage extends Component {
                   return (
                     <img
                       key={i}
-                      src={`//getrightproperty.com/uploads/${url}`}
+                      src={`//getrightproperty.com:3001/uploads/${url}`}
                     />
                   );
                 })}

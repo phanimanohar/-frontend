@@ -31,7 +31,7 @@ class CardTwo extends React.Component {
 
               <img
                 className="card-img-top"
-                src={`//getrightproperty.com/uploads/${imgUrl}`}
+                src={`//getrightproperty.com:3001/uploads/${imgUrl}`}
                 alt="Card cap"
               />
             </div>

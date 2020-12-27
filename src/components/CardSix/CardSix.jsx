@@ -43,7 +43,7 @@ class CardSix extends React.Component {
     };
     console.log("enquiry", enquiryDetails);
     axios
-      .post(`//getrightproperty.com/api/property/enquiry`, enquiryDetails)
+      .post(`//getrightproperty.com:3001/api/property/enquiry`, enquiryDetails)
       .then((response) => {
         console.log(response);
       })

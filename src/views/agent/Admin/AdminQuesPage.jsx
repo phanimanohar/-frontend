@@ -161,7 +161,7 @@ class AdminQuesPage extends Component {
 
     axios
       .put(
-        `//getrightproperty.com/api/property/${propertyDetails.id}`,
+        `//getrightproperty.com:3001/api/property/${propertyDetails.id}`,
         propertyDetails
       )
       .then((response) => {
@@ -300,7 +300,7 @@ class AdminQuesPage extends Component {
                   <img
                     style={{ width: "360px", height: "280px" }}
                     className="property-img"
-                    src={`//getrightproperty.com/uploads/${this.state.imgUrl}`}
+                    src={`//getrightproperty.com:3001/uploads/${this.state.imgUrl}`}
                     alt="Responsive"
                   />
                 </div>

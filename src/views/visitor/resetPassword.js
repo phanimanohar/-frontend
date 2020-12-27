@@ -51,7 +51,7 @@ export default class resetPassword extends Component {
         // const data = { email: this.state.email, };
         // console.log(data)
         axios
-            .post("//getrightproperty.com/api/user/updatePassword", this.state)
+            .post("//getrightproperty.com:3001/api/user/updatePassword", this.state)
             .then((result) => {
                 NotificationManager.success(result.data.msg);
             })

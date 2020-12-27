@@ -72,7 +72,7 @@ class App extends React.Component {
         // console.log("code", textDetails.countryCode)
         console.log("code", countryCodeValue);
         await axios
-            .get("//getrightproperty.com/api/profile/otp", {
+            .get("//getrightproperty.com:3001/api/profile/otp", {
                 params: {
                     email: email,
                     phone: phone,
@@ -99,7 +99,7 @@ class App extends React.Component {
         const { id, token } = this.state;
         // console.log("iddd", id)
         await axios
-            .get("//getrightproperty.com/api/profile/verify", {
+            .get("//getrightproperty.com:3001/api/profile/verify", {
                 params: {
                     id: id,
                     token: token,

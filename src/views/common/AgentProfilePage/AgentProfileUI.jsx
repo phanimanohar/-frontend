@@ -20,7 +20,7 @@ class AgentProfileUI extends React.Component {
           <div className="d-flex flex-row border rounded">
             <div className="p-0 w-25">
               <img
-                src={`//getrightproperty.com/uploads/${imgUrl}`}
+                src={`//getrightproperty.com:3001/uploads/${imgUrl}`}
                 className="img-thumbnail border-0"
                 alt=""
               />

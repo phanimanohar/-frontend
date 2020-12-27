@@ -135,7 +135,7 @@ class EditPropertyPage extends Component {
     // this.props.updateProperty(propertyDetails);
     axios
       .put(
-        `//getrightproperty.com/api/property/${propertyDetails.id}`,
+        `//getrightproperty.com:3001/api/property/${propertyDetails.id}`,
         propertyDetails
       )
       .then((response) => {
