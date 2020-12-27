@@ -44,7 +44,7 @@ class CardThree extends React.Component {
 
               <img
                 className="card-img-top"
-                src={`//getrightproperty.com:3001/uploads/${imgUrl}`}
+                src={`//getrightproperty.com/uploads/${imgUrl}`}
                 alt="Card cap"
               />
             </div>

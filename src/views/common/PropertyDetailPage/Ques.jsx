@@ -108,7 +108,7 @@ class Ques extends Component {
 
     axios
       .put(
-        `//getrightproperty.com:3001/api/property/${propertyDetails.id}`,
+        `//getrightproperty.com/api/property/${propertyDetails.id}`,
         propertyDetails
       )
       .then((response) => {
